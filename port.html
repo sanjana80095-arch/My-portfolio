@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            background: linear-gradient(to right, #0f172a, #1e293b);
+        }
+
+        /* Navbar */
+        nav {
+            background: #020617;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #38bdf8;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        img {
+            border-radius: 50%;
+            border: 3px solid #38bdf8;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px;
+            margin: 20px;
+            background: #1e293b;
+            border-radius: 15px;
+        }
+
+        /* Skills */
+        .skills span {
+            display: inline-block;
+            background: #38bdf8;
+            color: black;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #334155;
+            border-radius: 10px;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+            background: #475569;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: white;
+            color: black;
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <img src="my.jpg" width="130" style="border-radius:50%;">
+        <h1>Sanjana Gupta</h1>
+        <p>| Aspiring Python Developer | Django Learner | Backend Enthusiast |</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an aspiring Python developer with knowledge of Django. I have built an Online Events Booking Project
+            and I am learning backend development.</p>
+
+        <h2>Project Description</h2>
+        <p>Online Events Boking is a web application developed using Python and Django. This Project
+            allows users to view available events, check details, and book tickets online.
+        <h3>Features:</h3>
+        <p>=> User-friendly interface<br><br>=> event listing and details<br><br>=>Ticket booking system<br><br>
+            This project helped me understand backend development,database handling, and web application structure.
+            </br></p>
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>jQuery</span>
+            <span>Python with Django</span>
+            <span>MySQL</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>To-Do App</h3>
+            <p>Task management app using JavaScript</p>
+            <a href="https://sanjana80095-arch.github.io/Calculator/" target="_blank" class="btn">Live Demo</a>
+
+            <a href="https://github.com/sanjana80095-arch/Calculator.git" target="_blank" class="btn">GitHub
+                Code</a>
+        </div>
+
+        <div class="project">
+            <h3>Login System</h3>
+            <p>Login system using Python and SQL</p>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: sanjana80095@gmail.com</p>
+        <p>Phone: 9453024604</p>
+
+        <a href="ResumePython.pdf" class="btn">Download Resume</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Sanjana Gupta | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
